@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/astrolodgermeme" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/timeView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00.00"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#707070"
+            android:textSize="30sp"
+            tools:layout_conversion_absoluteHeight="41dp"
+            tools:layout_conversion_absoluteWidth="144dp"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="411dp" />
+
+        <TextView
+            android:id="@+id/timeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            tools:layout_conversion_absoluteHeight="49dp"
+            tools:layout_conversion_absoluteWidth="173dp"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="469dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="222dp"
+            android:layout_height="71dp"
+            android:checked="false"
+            android:onClick="buttonclick"
+            android:text="ToggleButton"
+            android:textOff="Start"
+            android:textOn="Stop"
+            tools:layout_conversion_absoluteHeight="81dp"
+            tools:layout_conversion_absoluteWidth="213dp"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="518dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#101010"
+            android:max="6"
+            android:progress="1"
+            tools:layout_conversion_absoluteHeight="24dp"
+            tools:layout_conversion_absoluteWidth="365dp"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="607dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
