@@ -1,4 +1,4 @@
-package com.jj.legitstopwatch;
+package com.JJ.legitstopwatch;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

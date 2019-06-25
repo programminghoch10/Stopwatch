@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:installLocation="preferExternal"
-    package="com.jj.legitstopwatch">
+    package="com.JJ.legitstopwatch">
 
     <application
         android:allowBackup="true"
