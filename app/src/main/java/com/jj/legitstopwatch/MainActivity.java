@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         });
         if (h>0 & m<overhang) {
             m = m+60;
-            if(h>=60) h--;
+            if(m>=60) h--;
         }
         if (m>0 & s<overhang) {
             s = s+60;
